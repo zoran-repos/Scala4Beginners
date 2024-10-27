@@ -1,5 +1,5 @@
 
-# Scala4Beginners
+# Scala Basics Unveiled Course
 
 Welcome to the **Scala4Beginners** course! 
 
