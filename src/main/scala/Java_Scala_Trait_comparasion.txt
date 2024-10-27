@@ -1,0 +1,6 @@
+Feature                     Java Interface                          Scala Trait
+Method Implementation       Only default methods                    Can have concrete methods
+Constructor Parameters      Not allowed                             Not allowed (can be simulated)
+Multiple Inheritance        Supported                               Supported (better control)
+Linearization               None                                    Yes (resolves diamond problem)
+Flexibility and Modularity  Limited                                 Higher modularity and flexibility
