@@ -67,6 +67,25 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install scala
 ```
 
+### Alternative: Install using Coursier
+
+You can install Scala using [Coursier](https://get-coursier.io/), a popular Scala installer:
+
+1. **Download Coursier:** Download the Coursier binary for Windows from [this link](https://github.com/coursier/coursier/releases/latest/download/cs-x86_64-pc-win32.zip).
+2. **Extract and Run:** Extract the downloaded ZIP file and place the `cs` executable in a directory of your choice.
+3. **Set PATH:** Add the directory containing `cs` to your PATH environment variable.
+4. **Install Scala with Coursier:** Open a command prompt and run the following command:
+
+   ```bash
+   cs install scala
+   ```
+
+5. **Verify the Installation:**
+
+   ```bash
+   scala -version
+   ```
+   
 ## Recommended IDE Plugins
 
 ### Visual Studio Code
