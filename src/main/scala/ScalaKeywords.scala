@@ -1,3 +1,9 @@
+/*
+Scala Keywords
+Scala has a set of reserved keywords that have special meanings in the language. 
+These keywords cannot be used as identifiers (such as variable names or function names) in Scala code. 
+Here is a list of some of the most commonly used Scala keywords:
+
 abstract - used to define abstract classes and methods that cannot be instantiated directly.
 case - used for case classes and pattern matching.
 catch - used in exception handling to capture and process exceptions.
@@ -43,3 +49,5 @@ with - used for mixin inheritance.
 yield - returns values in for comprehensions, creating a new collection.
 
 Scala 3 also introduces keywords like given, using, and opaque to enhance type safety and modularity.
+
+ */
