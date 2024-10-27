@@ -3,6 +3,7 @@
 //but first, you need to start the Scala REPL by running the command `scala` in the terminal
 //Then you can copy and paste the code into the REPL
 
+
 // Example 1
 val name = "Scala"
 var age = 30
