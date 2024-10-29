@@ -1,6 +1,18 @@
+import scala.Predef
+//import scala.collection.mutable.*
+
+
 @main def runProductExample(): Unit = {
   case class Product(name: String, price: Double, category: String)
 
+//  val mutable_list = ListBuffer(1, 2, 3, 4, 5)
+//
+//  mutable_list += 6
+//  mutable_list -= 2
+//
+//
+//  println(mutable_list)
+//  mutable_list.toList
   val products = List(
     Product("Laptop", 1500.0, "Electronics"),
     Product("Smartphone", 800.0, "Electronics"),
