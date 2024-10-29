@@ -29,17 +29,17 @@
   }
 
   val totalCompensation = removedEmployee ++ bonusCompensation
-  
-  
-  println(s"Updated employees: ${updatedEmployees.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")
-  println(s"Increased salaries: ${increasedSalaries.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")
-  println(s"After removal: ${removedEmployee.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")
-  println(s"High earners: ${highEarners.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")
-  println(s"Top earner: ${topEarner._1} -> ${topEarner._2.formatted("%.3f")}")
-  println(s"Lowest earner: ${lowestEarner._1} -> ${lowestEarner._2.formatted("%.3f")}")
-  println(s"Salary groups: ${salaryGroups.map((group, list) => s"$group -> ${list.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")}")
+
+
+  println(s"Updated employees: ${updatedEmployees.map((name, salary) => f"$name -> $salary%.3f")}")
+  println(s"Increased salaries: ${increasedSalaries.map((name, salary) => f"$name -> $salary%.3f")}")
+  println(s"After removal: ${removedEmployee.map((name, salary) => f"$name -> $salary%.3f")}")
+  println(s"High earners: ${highEarners.map((name, salary) => f"$name -> $salary%.3f")}")
+  println(f"Top earner: ${topEarner._1} -> ${topEarner._2}%.3f")
+  println(f"Lowest earner: ${lowestEarner._1} -> ${lowestEarner._2}%.3f")
+  println(s"Salary groups: ${salaryGroups.map((group, list) => f"$group -> ${list.map((name, salary) => f"$name -> $salary%.3f")}")}")
   println(s"Has specific salary 55000: $hasSpecificSalary")
   println(s"All names: ${allNames.mkString(", ")}")
-  println(s"All salaries: ${allSalaries.map(_.formatted("%.3f")).mkString(", ")}")
-  println(s"As list: ${asList.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")
-  println(s"Total compensation: ${totalCompensation.map((name, salary) => s"$name -> ${salary.formatted("%.3f")}")}")
+  println(s"All salaries: ${allSalaries.map(salary => f"$salary%.3f").mkString(", ")}")
+  println(s"As list: ${asList.map((name, salary) => f"$name -> $salary%.3f")}")
+  println(s"Total compensation: ${totalCompensation.map((name, salary) => f"$name -> $salary%.3f")}")
